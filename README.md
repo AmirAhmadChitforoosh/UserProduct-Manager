@@ -13,5 +13,35 @@ This project is a feature-rich Angular web application designed for managing use
     - Add and edit products.
     - View a product list with detailed information.
 
-s
+---
+## Acknowledgments
+- This project was created as part of the **Hamkaran System Angular Bootcamp**, which provided structured training and guidance in modern web development practices.
+- Thanks to the mentors and team at **Hamkaran System** for their support and feedback throughout the project.
+
+---
+## Technologies Used
+- **Framework**: Angular
+- **Language**: TypeScript, HTML, CSS
+- **State Management**: Angular Services
+- **Routing**: Angular Router
+- **Styling**: CSS
+
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/your-repo.git
+   cd your-repo
+   
+2. Install dependencies:
+   ```bash
+   npm install
+   
+3. Start the development server:
+   ```bash
+   ng serve
+4. Open the application in your browser:
+  - Navigate to `http://localhost:4200`.
+  
+
 
