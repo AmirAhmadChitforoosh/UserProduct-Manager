@@ -1,0 +1,5 @@
+@if(currentUser?.role === 1){
+  <app-form [formType] = "'user'" (formChange) = "newUser = $event"></app-form>
+}@else{
+  <h1>You are not allowed</h1>
+}

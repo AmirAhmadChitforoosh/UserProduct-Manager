@@ -1,0 +1,16 @@
+<div class="container">
+  <h1>Product List</h1>
+  @for(product of products; track product.id) {
+      <div class="product-item" [id]="'product-list-item-' + product.id">
+          <div class="product-details">
+              <p><strong>Name:</strong> {{product.name}}</p>
+              <p><strong>Code:</strong> {{product.code}}</p>
+              <p><strong>Weight:</strong> {{product.weight | bigDecimal | weightInKg}}</p>
+          </div>
+          <div class="button-group">
+              <button class="action-button edit-button" (click)="editProduct($event)">Edit</button>
+              <button class="action-button delete-button" (click)="deleteProduct($event)">Delete</button>
+          </div>
+      </div>
+  }
+</div>

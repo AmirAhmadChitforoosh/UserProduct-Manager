@@ -1,0 +1,27 @@
+
+
+<div class = "container">
+  <h1>Login page</h1>
+  <form [formGroup]="formGroup">
+      <label>*username:</label>
+      <input [invalidInput] = "formGroup.get('username')" type="text" formControlName = "username"  name="username" >
+      @if(buttonClicked){
+        @if(formGroup.get('username')?.hasError('required')){
+          <p style="color: red;">username required!</p>
+        }
+      }
+      <label>*password:</label>
+      <input [invalidInput] = "formGroup.get('password')" type="text" formControlName = "password" name = "password">
+      @if(buttonClicked){
+        @if(formGroup.get('password')?.hasError('required')){
+          <p style="color: red;">password required!</p>
+        }
+      }
+
+
+  </form>
+  @if(userNameNotFound){
+    <p style="color: red;">username or password does not exist! </p>
+  }
+  <button (click) = "onSubmit()">Submit</button>
+</div>

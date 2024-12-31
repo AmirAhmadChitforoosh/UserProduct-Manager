@@ -1,0 +1,9 @@
+<nav>
+
+    @for(prop of navbarProperties ; track prop.name){
+      <button [routerLink] = "'/' + prop.link"> {{prop.name}}</button>
+
+  }
+
+
+</nav>

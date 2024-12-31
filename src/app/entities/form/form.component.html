@@ -1,0 +1,18 @@
+
+<div class = "container">
+  <form [formGroup] = "formGroup">
+    @for(control of formControls ; track control){
+
+
+      <label>*{{control}}: </label>
+      <input [invalidInput]="formGroup.get(control)" [type] ="formControlConfig[control]" [formControlName] = "control">
+
+
+    }
+  </form>
+  <!-- @if(formGroup.invalid){
+    <p style="color: red;">Please enter the inputs carefully.</p>
+  } -->
+  <button (click) = "onSubmit()">submit</button>
+</div>
+

@@ -1,0 +1,60 @@
+.container {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  width: 100%;
+}
+
+
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Labels and Inputs */
+label {
+  display: block;
+  font-size: 1em;
+  margin-bottom: 5px;
+  text-align: left;
+  color: #666;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+  box-sizing: border-box;
+  transition: border 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid #4facfe;
+}
+
+/* Submit Button */
+button {
+  background: #4facfe;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1em;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+}
+
+button:hover {
+  background: #00c6ff;
+  transform: scale(1.05);
+}

@@ -1,0 +1,46 @@
+<div class = "container">
+  <h1>User List</h1>
+  @for(user of users ; track user.id){
+
+
+
+    <div class = "user-item" [id] = "'uesr-list-item-' + user.id">
+    @if(user.username == 'admin'){
+
+      <div class = "user-details">
+
+        <p>username: {{user.username}}</p>
+        <p>password: {{user.password}}</p>
+        <p>role: {{user.role | roleName}}</p>
+      </div>
+
+
+
+
+    }@else {
+
+        <div class = "user-details">
+          <p>first name: {{user.firstName}}</p>
+          <p>last name: {{user.lastName}}</p>
+          <p>role: {{user.role | roleName}}</p>
+          <p>national code: {{user.nationalCode}}</p>
+          <p>mobile: {{user.mobile}}</p>
+          <p>username: {{user.username}}</p>
+          <p>password: {{user.password}}</p>
+        </div>
+
+
+        @if(currentUser.role === 1){
+          <div class = "button-group">
+            <button class="action-button edit-button" (click) = "editUser($event)">edit</button>
+            <button class="action-button delete-button" (click) = "deleteUser($event)">delete</button>
+          </div>
+
+        }
+    }
+    
+    </div>
+  }
+
+
+</div>

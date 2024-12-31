@@ -1,0 +1,88 @@
+/* Container */
+.container {
+  width: 100%; /* Full width with max space */
+  max-width: 1200px; /* To limit on large screens */
+  margin: 20px auto;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: block; /* Ensures children are block-level by default */
+}
+
+/* Title */
+h1 {
+  text-align: center;
+  color: #4facfe;
+  margin-bottom: 20px;
+  font-size: 2em;
+  min-width: 800px;
+}
+
+/* User Item */
+.user-item {
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* Force each item to stretch to the full width of the container */
+  margin-bottom: 15px;
+  padding: 15px;
+  background: #f1f8ff;
+  border-radius: 8px;
+  border: 1px solid #d6eaff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box; /* Include padding and border in width */
+  word-wrap: break-word; /* Wrap long content to the next line */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.user-item:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* User Details */
+.user-details p {
+  margin: 5px 0;
+  font-size: 1em;
+  color: #555;
+}
+
+/* Button Group */
+.button-group {
+  justify-content: center;
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.action-button {
+  padding: 8px 15px;
+  font-size: 0.9em;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.edit-button {
+  background-color: #4caf50;
+  color: white;
+
+
+}
+.edit-button:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+.delete-button {
+  background-color: #f44336;
+  color: white;
+
+
+}
+.delete-button:hover {
+  background-color: #e53935;
+  transform: scale(1.05);
+}
