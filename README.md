@@ -45,95 +45,10 @@ This project is a feature-rich Angular web application designed for managing use
 
 ---
 ## Getting Started
-The first username and password for the webpage to start working is
-  ```json
-  {
+The first username and password for the webpage to start working is:
 
-    "username": "admin"
-    "password":  "admin"
-    
-  }
-
-## HTTP Requests
-
-This project uses a variety of HTTP requests to interact with a backend running on `localhost:3000`. Below is a summary of the endpoints and their functionality:
-
-- User Model:
-  ```json
-  {
-    "id":
-    "firstName":
-    "lastName":
-    "role":
-    "nationalCode":
-    "mobile":
-    "username":
-    "password":
-    
-  }
-
-- Product Model:
-  ```json
-  {
-  "id":
-  "name":
-  "code":
-  "weight":
-  }
-
-### Authentication
-- **POST `/api/auth`**  
-  - Description: Validates user credentials and returns a token for authenticated sessions.  
-  - Payload:  
-    ```json
-    {
-      "username": "username123",
-      "password": "password123"
-    }
-    ```
-
-### User Management
-- **GET `/api/users`**  
-  - Description: Retrieves a list of all users.
-  - 
-- **POST `/api/users`**  
-  - Description: Adds a new user to the database.   
-
-- **PUT `/users/:id`**  
-  - Description: Updates the information of a specific user.  
-  - Payload:  
-    ```json
-    {
-      "name": "Updated Name",
-      "email": "updated.email@example.com"
-    }
-    ```
-
-### Product Management
-- **GET `/products`**  
-  - Description: Retrieves a list of all products.  
-
-- **POST `/products`**  
-  - Description: Adds a new product to the database.  
-  - Payload:  
-    ```json
-    {
-      "name": "Product Name",
-      "price": 25.99,
-      "description": "Product description"
-    }
-    ```
-
-- **PUT `/products/:id`**  
-  - Description: Updates details of a specific product.  
-  - Payload:  
-    ```json
-    {
-      "name": "Updated Product Name",
-      "price": 30.00,
-      "description": "Updated product description"
-    }
-    ```
+  
+  
 
   
 
