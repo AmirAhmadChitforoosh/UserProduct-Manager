@@ -1,13 +1,13 @@
 # Angular Management App
 ## Description
-This project is a feature-rich Angular web application designed for managing users and products. It includes essential functionalities such as login and signup, adding and editing users and products, and displaying user and product lists. The application demonstrates efficient use of Angular's component-based architecture, forms, and services.
+This project is a feature-rich Angular web application designed for managing users and products. It includes essential functionalities such as login, adding and editing users and products, and displaying user and product lists. The application demonstrates efficient use of Angular's component-based architecture, forms, and services.
 
 ---
 ## Features
-- **Authentication:**:
+- **Authentication:**
   - User login functionality
 - **User Management:**
-  - Add, edit, and display user details.
+  - Add and edit users.
   - User list with dynamic updates.
 - **Product Management:**
     - Add and edit products.
@@ -15,8 +15,7 @@ This project is a feature-rich Angular web application designed for managing use
 
 ---
 ## Acknowledgments
-- This project was created as part of the **Hamkaran System Angular Bootcamp**, which provided structured training and guidance in modern web development practices.
-- Thanks to the mentors and team at **Hamkaran System** for their support and feedback throughout the project.
+This project was developed as part of the **Hamkaran System Angular Bootcamp**, a structured training program focusing on modern web development practices. Special thanks to the mentors and the team at **Hamkaran System** for their continuous support and insightful feedback throughout the project.
 
 ---
 ## Technologies Used
@@ -26,12 +25,13 @@ This project is a feature-rich Angular web application designed for managing use
 - **Routing**: Angular Router
 - **Styling**: CSS
 
+---
 ## Installation
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/your-repo.git
-   cd your-repo
+   git clone https://github.com/AmirAhmadChitforoosh/UserProduct-Manager
+   cd UserProduct-Manager
    
 2. Install dependencies:
    ```bash
@@ -45,7 +45,7 @@ This project is a feature-rich Angular web application designed for managing use
 
 ---
 ## Getting Started
-The first username and password for the webpage to start working is:
+Use the following default credentials to log in and start using the application:
   ```json
   {
     "username": "admin"
@@ -54,7 +54,7 @@ The first username and password for the webpage to start working is:
 ```
 
 
-
+---
 ## HTTP Requests
 This project uses a variety of HTTP requests to interact with a backend running on `localhost:3000`. Below is a summary of the endpoints and their functionality:
 - User Model:
@@ -81,7 +81,7 @@ This project uses a variety of HTTP requests to interact with a backend running 
 
   
 ### Authentication
-- **POST '/api/auth'**  
+- **POST** `/api/auth`
   - Description: Validates user credentials and returns a token for authenticated sessions.  
   - Payload:  
     ```json
@@ -91,33 +91,40 @@ This project uses a variety of HTTP requests to interact with a backend running 
     }
     ```
 ### User Management
-- **GET '/api/users'**  
+- **GET** `/api/users`
   - Description: Retrieves a list of all users.
     
-- **POST '/api/users'**  
+- **POST** `/api/users` 
   - Description: Adds a new user to the database.
     
-- **PUT '/api/users'**  
+- **PUT** `/api/users`
   - Description: Edits the information of users.
 
-- **DELETE /api/users**
-  - Description: Delete a user from the database.
+- **DELETE** `/api/users`
+  - Description: Deletes a user from the database.
 
-- **GET /api/users/current**
+- **GET** `/api/users/current`
   - Description: Retrieves the information of the currently authenticated user.
     
 ### Product Management
-- **GET '/api/products'**  
+- **GET** `/api/products`
   - Description: Retrieves a list of all products.
  
-- **POST '/api/products'**  
+- **POST** `/api/products`
   - Description: Adds a new product to the database.  
 
-- **PUT '/api/products**  
-  - Description: Updates details of products.  
+- **PUT** `/api/products`
+  - Description: Updates details of products.
 
-- **DELETE '/api/products**  
-  - Description:  Delete a product from the database.
+- **DELETE** `/api/products`
+  - Description:  Deletes a product from the database.
+ 
+
+---
+ ## Contact
+Feel free to reach out if you have suggestions or feedback:
+- **GitHub:** [AmirAhmadChitforoosh](https://github.com/AmirAhmadChitforoosh)
+- **Email:** amirahmad.chitforoosh@gmail.com
 
   
   
